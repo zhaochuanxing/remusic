@@ -263,6 +263,8 @@ public class HttpUtil {
             mOkHttpClient.setReadTimeout(3000, TimeUnit.MINUTES);
             Request request = new Request.Builder()
                     .url(action1)
+//                    .addHeader("user-agent","Mozilla/5.0 (Windows;U;Windows NT 5.1;en-US;rv:0.9.4)")
+            .addHeader("user-agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4)")
 //                    .addHeader("Referer","http://music.163.com/")
 //                    .addHeader("Cookie", "appver=1.5.0.75771")
                     .build();
